@@ -61,7 +61,7 @@ func NewIPAMPrefixesAvailableIpsCreateCreated() *IPAMPrefixesAvailableIpsCreateC
 IPAMPrefixesAvailableIpsCreateCreated ipam prefixes available ips create created
 */
 type IPAMPrefixesAvailableIpsCreateCreated struct {
-	Payload *models.Prefix
+	Payload *models.IPAddress
 }
 
 func (o *IPAMPrefixesAvailableIpsCreateCreated) Error() string {
@@ -70,7 +70,7 @@ func (o *IPAMPrefixesAvailableIpsCreateCreated) Error() string {
 
 func (o *IPAMPrefixesAvailableIpsCreateCreated) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
 
-	o.Payload = new(models.Prefix)
+	o.Payload = new(models.IPAddress)
 
 	// response payload
 	if err := consumer.Consume(response.Body(), o.Payload); err != nil && err != io.EOF {

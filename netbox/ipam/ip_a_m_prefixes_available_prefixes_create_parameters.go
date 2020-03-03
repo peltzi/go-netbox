@@ -79,7 +79,7 @@ for the ipam prefixes available prefixes create operation typically these are wr
 type IPAMPrefixesAvailablePrefixesCreateParams struct {
 
 	/*Data*/
-	Data *models.WritablePrefix
+	Data *models.WritableAvailableIPAddress
 	/*ID
 	  A unique integer value identifying this prefix.
 
